@@ -10,5 +10,7 @@ x = np.linspace(0, 1)
 for val in lambda_val:
     plt.plot(x, np.exp(-val * x), label=f"lambda: {val}")
 
+plt.xlabel("x")
+plt.ylabel("y=exp(-lambda x)")
 plt.legend()
 plt.show()

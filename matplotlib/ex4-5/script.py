@@ -3,8 +3,9 @@
 
 import pandas as pd
 import matplotlib.pyplot as plt
+from os import path
 
-df = pd.read_csv('data/data1.csv')
+df = pd.read_csv(path.join(path.dirname(__file__), path.normpath('../../data/data1.csv')))
 
 plt.subplot(211)
 plt.scatter(df['age'], df['fare'])
